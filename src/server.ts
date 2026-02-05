@@ -3,10 +3,12 @@ dotenv.config();
 import app from "./app";
 import { connectDatabase } from "./config/database"
 
+import cors from "cors";
+app.use(cors({
+  origin: "https://insightboard-frontend-idaf.vercel.app/",
+}));
 
- console.log("Starting server.111..");
 const PORT = 3000;
-  console.log("Starting server...");
 const startServer = async () => {
 
   await connectDatabase();
