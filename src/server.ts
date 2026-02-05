@@ -5,7 +5,7 @@ import { connectDatabase } from "./config/database"
 
 import cors from "cors";
 app.use(cors({
-  origin: "https://insightboard-backend-57ed.vercel.app/graph",
+  origin: "https://insightboard-backend-57ed.vercel.app/",
 }));
 
 const PORT = 3000;
